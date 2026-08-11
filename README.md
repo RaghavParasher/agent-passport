@@ -2,7 +2,8 @@
 
 > **AI Passport Ideathon Submission**  
 > **Track:** Agents Track | **Lane:** Build Lane  
-> **Live Demo:** [https://<YOUR_GITHUB_USERNAME>.github.io/agent-passport/](https://github.com)
+> **Live Demo:** [https://raghavparasher.github.io/agent-passport/](https://raghavparasher.github.io/agent-passport/)  
+> **Repository:** [https://github.com/RaghavParasher/agent-passport](https://github.com/RaghavParasher/agent-passport)
 
 ---
 
