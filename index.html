@@ -28,11 +28,12 @@
 
       <nav class="app-nav">
         <a href="#hero-section" class="nav-link">Overview</a>
-        <a href="#mindmap-section" class="nav-link">Passport Mind-Map</a>
+        <a href="#how-it-works-section" class="nav-link">How It Works</a>
+        <a href="#use-cases-section" class="nav-link">Use Cases</a>
         <a href="#issuer-section" class="nav-link">Issue Passport</a>
-        <a href="#sandbox-section" class="nav-link">Live Agent Sandbox</a>
-        <a href="#security-section" class="nav-link">Security Ledger</a>
-        <a href="#issuer-section" class="btn btn-primary btn-sm">Issue AI Passport</a>
+        <a href="#sandbox-section" class="nav-link">Agent Sandbox</a>
+        <a href="#faq-section" class="nav-link">FAQ</a>
+        <a href="#issuer-section" class="btn btn-primary btn-sm">Issue Passport</a>
       </nav>
     </header>
 
@@ -95,7 +96,7 @@
           <div class="mindmap-center">
             <div class="mindmap-core-btn">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-              Login with AI Passport
+              Egoist Agent Delegation Standard
             </div>
           </div>
 
@@ -127,7 +128,69 @@
         </div>
       </section>
 
-      <!-- SECTION 3: PASSPORT ISSUER WORKSPACE -->
+      <!-- SECTION 3: HOW IT WORKS 3-STEP PROCESS CARDS -->
+      <section id="how-it-works-section" class="section-container">
+        <div class="section-header text-center">
+          <h2>HOW THE AI PASSPORT PROTOCOL WORKS</h2>
+          <p>Three architectural steps ensuring zero-trust delegation between humans, agents, and target services.</p>
+        </div>
+
+        <div class="grid-3col-steps">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h3>1. Human Delegation & Signing</h3>
+            <p>The human master key owner issues a short-lived Ed25519-signed AI Passport. It defines explicit spend limits, expiration windows, and whitelisted API capability scopes.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h3>2. Perimeter Verification</h3>
+            <p>When the autonomous agent calls target microservices (GitHub, AWS, Stripe), the API gateway inspects the bearer passport signature and checks requested scopes before allowing execution.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h3>3. Real-Time Audit & Revocation</h3>
+            <p>Financial spend allowances are deducted on the fly. If an agent hallucinates or is prompt-injected, the owner flips the 1-click revocation switch to instantly shut down authority globally.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: USE CASE GALLERY CARDS -->
+      <section id="use-cases-section" class="section-container">
+        <div class="section-header text-center">
+          <h2>AI PASSPORT IDEATHON USE CASES</h2>
+          <p>Where AI Passport can be deployed across the four official Ideathon tracks.</p>
+        </div>
+
+        <div class="grid-2col-gallery">
+          <div class="gallery-card">
+            <div class="gc-badge">AGENTS TRACK</div>
+            <h3>🤖 Autonomous DevOps & Software Agents</h3>
+            <p>Empower code-writing agents to read repositories, merge pull requests to staging, and trigger container builds without exposing production credentials or raw master keys.</p>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gc-badge">WORK TRACK</div>
+            <h3>💼 Procurement & Financial Bots</h3>
+            <p>Grant purchasing agents strict spend caps (e.g. $150/day) to buy API compute credits or cloud resources. Prevents runaway billing loops and unapproved wire transfers.</p>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gc-badge">CREATIVE TRACK</div>
+            <h3>🎨 Content Attribution & IP Licensing</h3>
+            <p>Attach verifiable creative rights proofs to AI media generators, proving origin, licensing terms, and usage rights across digital platforms.</p>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gc-badge">IDENTITY TRACK</div>
+            <h3>🛡️ Privacy-Preserving Proof of Humanity</h3>
+            <p>Provide zero-knowledge context passports for personal assistant bots, allowing agents to act on your behalf while keeping private identity vaults undisclosed.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: PASSPORT ISSUER WORKSPACE -->
       <section id="issuer-section" class="section-container">
         <div class="section-header">
           <h2>1. Issue Cryptographic AI Passport</h2>
@@ -397,6 +460,37 @@
               </table>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: FAQ ACCORDION SECTION -->
+      <section id="faq-section" class="section-container">
+        <div class="section-header text-center">
+          <h2>FREQUENTLY ASKED QUESTIONS & GOVERNANCE</h2>
+          <p>Technical considerations for zero-trust AI agent credentials.</p>
+        </div>
+
+        <div class="faq-container">
+          <details class="faq-item">
+            <summary class="faq-question">What happens if an autonomous AI agent is prompt-injected or hallucinates?</summary>
+            <div class="faq-answer">
+              <p>Because the agent operates strictly under an AI Passport, target API gateways verify the signed scopes before executing any action. If a prompt-injected agent attempts an unauthorized command (e.g. <code>cloud:deploy_production</code>), the target service blocks execution at the network boundary, regardless of what the agent requested.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How does instant emergency revocation work across microservices?</summary>
+            <div class="faq-answer">
+              <p>Target microservices perform a lightweight, sub-millisecond check against the global revocation registry (or OCSP/Merkle proof endpoint) attached to the passport header. When the human owner flips the revocation switch, all active bearer credentials instantly fail authorization globally.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Why use short-lived asymmetric signatures (Ed25519) instead of traditional API keys?</summary>
+            <div class="faq-answer">
+              <p>Static API keys carry permanent, unrestricted privileges. If stolen or leaked in logs, attackers gain total access. AI Passports are short-lived, cryptographically signed, bound to specific dollar budget caps, and carry zero-knowledge scope limitations.</p>
+            </div>
+          </details>
         </div>
       </section>
 

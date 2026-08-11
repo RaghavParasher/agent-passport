@@ -106,7 +106,142 @@ body {
   transform: rotate(0deg) scale(1.02);
 }
 
-/* Mind-Map Section */
+/* How It Works Step Cards */
+.grid-3col-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.step-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  border-color: #18181b;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.step-num {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+.step-card h3 {
+  font-size: 1.1rem !important;
+  font-weight: 800 !important;
+  color: #09090b !important;
+  margin-bottom: 8px;
+}
+
+.step-card p {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Use Case Gallery Cards */
+.grid-2col-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.gallery-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.2s ease;
+}
+
+.gallery-card:hover {
+  border-color: #18181b;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.gc-badge {
+  display: inline-block;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 10px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+.gallery-card h3 {
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+  color: #09090b !important;
+  margin-bottom: 8px;
+}
+
+.gallery-card p {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* FAQ Accordion */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.faq-item[open] {
+  border-color: #18181b;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.faq-question {
+  font-weight: 800;
+  font-size: 1.02rem;
+  color: #09090b;
+  outline: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-answer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.65;
+}
 .section-container {
   padding: 60px 0;
   border-bottom: 1px solid #e2e8f0;
