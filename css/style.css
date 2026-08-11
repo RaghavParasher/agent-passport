@@ -232,136 +232,70 @@ body {
   gap: 16px;
 }
 
+/* Headings & Text Colors Fix */
+h1, h2, h3, h4 {
+  color: #ffffff !important;
+}
+
 label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #cbd5e1 !important;
 }
 
-input[type="text"], input[type="number"] {
-  background: #0f172a;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 10px 14px;
-  color: var(--text-main);
-  font-family: var(--font-sans);
-  font-size: 0.9rem;
-  transition: border-color 0.2s ease;
+.sc-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #ffffff !important;
 }
 
-input:focus {
-  outline: none;
-  border-color: var(--accent-primary);
+.sc-desc {
+  font-size: 0.82rem;
+  color: #94a3b8 !important;
 }
 
-.checkbox-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.checkbox-card {
-  background: #0f172a;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 10px 12px;
+/* Card Button Scenario Styling Fix */
+.btn-scenario {
+  background: #1e293b !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  align-items: flex-start;
+  text-align: left;
+  gap: 4px;
   cursor: pointer;
-  transition: border-color 0.2s ease;
-  position: relative;
-}
-
-.checkbox-card input[type="checkbox"] {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  accent-color: var(--accent-primary);
-}
-
-.cb-title {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--accent-cyan);
-}
-
-.cb-desc {
-  font-size: 0.75rem;
-  color: var(--text-dim);
-}
-
-.checkbox-card.alert-danger .cb-title {
-  color: var(--accent-danger);
-}
-
-.status-indicator-box {
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  padding: 10px 14px;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.85rem;
-  color: var(--accent-success);
-}
-
-.status-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-.status-dot.green {
-  background: var(--accent-success);
-  box-shadow: 0 0 8px var(--accent-success);
-}
-
-/* Buttons */
-.btn {
-  border: none;
-  border-radius: var(--radius-sm);
-  padding: 10px 18px;
-  font-weight: 600;
-  font-size: 0.88rem;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
   transition: all 0.2s ease;
 }
 
-.btn-primary {
-  background: linear-gradient(135deg, var(--accent-primary), var(--accent-primary-hover));
-  color: #fff;
+.btn-scenario:hover {
+  border-color: var(--accent-primary) !important;
+  background: #334155 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.2);
 }
 
-.btn-primary:hover {
-  transform: translateY(-1px);
+.alert-scenario {
+  border-color: rgba(239, 68, 68, 0.4) !important;
+  background: rgba(239, 68, 68, 0.08) !important;
+}
+
+.alert-scenario:hover {
+  border-color: var(--accent-danger) !important;
+  background: rgba(239, 68, 68, 0.2) !important;
+}
+
+/* Nav Button Clean Up */
+.nav-btn.highlight {
+  border: 1px solid var(--accent-primary);
+  color: #ffffff;
+}
+
+.nav-btn.highlight.active {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-cyan));
+  color: #ffffff;
   box-shadow: var(--shadow-glow);
-}
-
-.btn-large {
-  padding: 14px 20px;
-  font-size: 0.95rem;
-  width: 100%;
-}
-
-.btn-secondary {
-  background: var(--bg-card-hover);
-  color: var(--text-main);
-}
-
-.btn-danger {
-  background: linear-gradient(135deg, var(--accent-danger), #dc2626);
-  color: #fff;
-}
-
-.btn-block {
-  width: 100%;
 }
 
 /* Passport Visual Document */
