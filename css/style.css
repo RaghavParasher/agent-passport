@@ -151,15 +151,23 @@ body {
 
 .mindmap-core-btn {
   background: #18181b;
-  color: #ffffff;
-  padding: 16px 32px;
+  color: #ffffff !important;
+  padding: 14px 28px;
   border-radius: 40px;
-  font-weight: 800;
-  font-size: 1.05rem;
-  display: flex;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  gap: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border: 1px solid #27272a;
+}
+
+.mindmap-core-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: #ffffff;
 }
 
 .mindmap-nodes-grid {
