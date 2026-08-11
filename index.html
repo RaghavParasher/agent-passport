@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AGENT-PASSPORT | Delegated AI Agent Authority & Identity Standard</title>
+  <title>AGENT-PASSPORT | Sovereign AI Agent Delegation Standard</title>
   <meta name="description" content="Cryptographically verifiable, scope-bound, and instantly revocable AI Passport standard for autonomous AI agents. Built for the AI Passport Ideathon.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,49 +12,131 @@
 </head>
 <body>
   <div class="app-container">
-    <!-- Header / Navigation -->
-    <header class="app-header">
+    <!-- Sticky Navigation Header -->
+    <header class="app-header sticky-header">
       <div class="logo-group">
         <div class="logo-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
           </svg>
         </div>
         <div class="logo-text">
           <h1>AI PASSPORT <span class="badge-track">Agents Track</span></h1>
-          <p class="subtitle">Zero-Trust Agent Delegation Protocol</p>
+          <p class="subtitle">Egoist Machines Delegation Standard</p>
         </div>
       </div>
 
       <nav class="app-nav">
-        <button class="nav-btn active" data-tab="tab-issuer">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          1. Issue Passport
-        </button>
-        <button class="nav-btn" data-tab="tab-sandbox">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          2. Agent Sandbox
-        </button>
-        <button class="nav-btn" data-tab="tab-inspector">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          3. Security & Inspector
-        </button>
+        <a href="#hero-section" class="nav-link">Overview</a>
+        <a href="#mindmap-section" class="nav-link">Passport Mind-Map</a>
+        <a href="#issuer-section" class="nav-link">Issue Passport</a>
+        <a href="#sandbox-section" class="nav-link">Live Agent Sandbox</a>
+        <a href="#security-section" class="nav-link">Security Ledger</a>
+        <a href="#issuer-section" class="btn btn-primary btn-sm">Issue AI Passport</a>
       </nav>
     </header>
 
-    <!-- Main Content Area -->
     <main class="app-main">
       
-      <!-- TAB 1: PASSPORT ISSUER -->
-      <section id="tab-issuer" class="tab-content active">
+      <!-- SECTION 1: HERO SECTION -->
+      <section id="hero-section" class="hero-container">
+        <div class="hero-content">
+          <span class="hero-pill">⚡ ZERO-TRUST AGENT DELEGATION</span>
+          <h1 class="hero-title">TURN AGENT AUTHORITY INTO AN <span class="highlight-text">AI PASSPORT</span></h1>
+          <p class="hero-subtitle">Grant autonomous AI agents scope-bound permissions, real-time spending caps, and instant revocation kill-switches without ever exposing your master API keys.</p>
+          
+          <div class="hero-cta-group">
+            <a href="#issuer-section" class="btn btn-primary btn-large">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Generate AI Passport
+            </a>
+            <a href="#sandbox-section" class="btn btn-secondary btn-large">Try Agent Simulator</a>
+          </div>
+        </div>
+
+        <div class="hero-card-preview">
+          <!-- Physical Matte Card Graphic -->
+          <div class="passport-visual hero-passport-card">
+            <div class="pv-header">
+              <div class="pv-logo">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                <span>EGOIST AI PASSPORT</span>
+              </div>
+              <span class="pv-id">pass_v8491x</span>
+            </div>
+            <div class="pv-body">
+              <div class="pv-field">
+                <span class="pv-label">SUBJECT AGENT</span>
+                <span class="pv-val">DevOps-AutoDeployer-v4</span>
+              </div>
+              <div class="pv-field">
+                <span class="pv-label">SPEND ALLOWANCE</span>
+                <span class="pv-val highlight-green">$150.00 USD</span>
+              </div>
+            </div>
+            <div class="pv-tags">
+              <span class="tag">github:read_code</span>
+              <span class="tag">github:merge_staging</span>
+              <span class="tag">cloud:deploy_staging</span>
+              <span class="tag">api:purchase_credits</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: INTERACTIVE MIND-MAP VISUALIZER -->
+      <section id="mindmap-section" class="section-container">
+        <div class="section-header text-center">
+          <h2>DELEGATED IDENTITY & PERMISSION ARCHITECTURE</h2>
+          <p>Control exactly what third-party apps, cloud services, and financial APIs your agent can access.</p>
+        </div>
+
+        <div class="mindmap-wrapper">
+          <div class="mindmap-center">
+            <div class="mindmap-core-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              Login with AI Passport
+            </div>
+          </div>
+
+          <div class="mindmap-nodes-grid">
+            <div class="mm-node node-top-left">
+              <span class="node-icon">💼</span>
+              <span class="node-title">GitHub Scopes</span>
+              <span class="node-desc">Read Code & Merge PRs</span>
+            </div>
+
+            <div class="mm-node node-top-right">
+              <span class="node-icon">☁️</span>
+              <span class="node-title">Cloud Deployment</span>
+              <span class="node-desc">Staging Containers Only</span>
+            </div>
+
+            <div class="mm-node node-bottom-left">
+              <span class="node-icon">💳</span>
+              <span class="node-title">Financial Cap</span>
+              <span class="node-desc">Max $150.00 Spending Limit</span>
+            </div>
+
+            <div class="mm-node node-bottom-right">
+              <span class="node-icon">🛑</span>
+              <span class="node-title">Instant Revocation</span>
+              <span class="node-desc">1-Click Global Kill-Switch</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: PASSPORT ISSUER WORKSPACE -->
+      <section id="issuer-section" class="section-container">
+        <div class="section-header">
+          <h2>1. Issue Cryptographic AI Passport</h2>
+          <p>Configure delegated permissions, spend limits, allowed endpoints, and sign the payload.</p>
+        </div>
+
         <div class="grid-2col">
           <!-- Form Panel -->
           <div class="card panel-card">
-            <div class="card-header">
-              <h2>Issue Cryptographic AI Passport</h2>
-              <p>Configure delegated permissions, maximum spend limits, allowed target endpoints, and expiration for an autonomous agent.</p>
-            </div>
-            
             <form id="passport-form" class="form-grid">
               <div class="form-group">
                 <label for="agent-name">Agent Identifier & Role</label>
@@ -62,7 +144,7 @@
               </div>
 
               <div class="form-group">
-                <label for="issuing-entity">Issuing Authority (Human/Org)</label>
+                <label for="issuing-entity">Issuing Authority (Human Owner)</label>
                 <input type="text" id="issuing-entity" value="alice@acme-corp.com (Master Key ID: #8492)" readonly>
               </div>
 
@@ -118,16 +200,7 @@
                 </div>
               </div>
 
-              <div class="form-group">
-                <label for="revocation-webhook">Revocation Guard Status</label>
-                <div class="status-indicator-box">
-                  <span class="status-dot green"></span>
-                  <span>Active Revocation Hub Connected (Real-Time Webhook Checked)</span>
-                </div>
-              </div>
-
               <button type="submit" class="btn btn-primary btn-large">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                 Generate & Cryptographically Sign AI Passport
               </button>
             </form>
@@ -136,7 +209,7 @@
           <!-- Preview & Token JSON -->
           <div class="card preview-card">
             <div class="card-header">
-              <h2>Passport Visual Credential & Token Payload</h2>
+              <h2>Passport Credential Card</h2>
               <span class="badge-status" id="passport-status-badge">ISSUED & VALID</span>
             </div>
 
@@ -144,8 +217,8 @@
             <div class="passport-visual" id="passport-visual-card">
               <div class="pv-header">
                 <div class="pv-logo">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
-                  <span>PASSPORT OF AI DELEGATION</span>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                  <span>EGOIST AI PASSPORT</span>
                 </div>
                 <span class="pv-id" id="pv-id">ID: pass_9984a1</span>
               </div>
@@ -199,16 +272,16 @@
         </div>
       </section>
 
-      <!-- TAB 2: AGENT SANDBOX -->
-      <section id="tab-sandbox" class="tab-content">
+      <!-- SECTION 4: AGENT SANDBOX SIMULATOR -->
+      <section id="sandbox-section" class="section-container">
+        <div class="section-header">
+          <h2>2. Live Autonomous Agent Sandbox</h2>
+          <p>Dispatch instructions to the agent. The agent presents its AI Passport to target APIs for verification.</p>
+        </div>
+
         <div class="grid-2col">
           <!-- Execution Command Center -->
           <div class="card">
-            <div class="card-header">
-              <h2>Agent Task Execution Simulator</h2>
-              <p>Dispatch instructions to the agent. The agent will present its AI Passport to mock APIs for authentication & authorization.</p>
-            </div>
-
             <div class="agent-profile-bar">
               <div class="ap-info">
                 <span class="ap-name" id="sandbox-agent-name">Agent: DevOps-AutoDeployer-v4</span>
@@ -264,21 +337,26 @@
             <div class="log-stream-container" id="log-stream">
               <div class="log-entry log-system">
                 <span class="log-time">[00:00:00]</span>
-                <span class="log-msg">System initialized. AI Passport pass_9984a1 bound to agent session. Ready for tasks.</span>
+                <span class="log-msg">System initialized. AI Passport bound to agent session. Ready for tasks.</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- TAB 3: SECURITY & INSPECTOR -->
-      <section id="tab-inspector" class="tab-content">
+      <!-- SECTION 5: SECURITY & AUDIT LEDGER -->
+      <section id="security-section" class="section-container">
+        <div class="section-header">
+          <h2>3. Security Command Center & Audit Ledger</h2>
+          <p>Emergency kill-switch and cryptographically verifiable record of all authorization requests.</p>
+        </div>
+
         <div class="grid-3col">
           <!-- Revocation Control -->
           <div class="card panel-card">
             <div class="card-header danger-header">
               <h2>Instant Passport Revocation</h2>
-              <p>Emergency kill-switch to nullify agent authority across all connected microservices instantly.</p>
+              <p>Emergency kill-switch to nullify agent authority instantly.</p>
             </div>
 
             <div class="revocation-box">
@@ -290,10 +368,6 @@
               <button class="btn btn-danger btn-block btn-large" id="btn-toggle-revoke">
                 🛑 INSTANTLY REVOKE AI PASSPORT
               </button>
-
-              <div class="revocation-info">
-                <p><strong>How it works:</strong> In zero-trust architecture, microservices check the global revocation registry (or short-lived OCSP/Merkle proof) before authorizing high-consequence ops. Revoking instantly invalidates all active bearer credentials.</p>
-              </div>
             </div>
           </div>
 
@@ -301,7 +375,6 @@
           <div class="card grid-span-2">
             <div class="card-header">
               <h2>Zero-Trust Verification Audit Ledger</h2>
-              <p>Cryptographically verifiable record of all authorization requests presented by the AI Passport.</p>
             </div>
 
             <div class="table-responsive">
@@ -325,45 +398,19 @@
             </div>
           </div>
         </div>
-
-        <!-- Privacy & Security Matrix -->
-        <div class="card margin-top">
-          <div class="card-header">
-            <h2>AI Passport Security & Privacy Assurance Matrix</h2>
-          </div>
-          <div class="matrix-grid">
-            <div class="matrix-card">
-              <h3>🔒 Privacy Preservation</h3>
-              <p>Passports hide sensitive master user tokens. Downstream services only see ephemeral agent identities and strict scope proofs, eliminating master key exposure.</p>
-            </div>
-
-            <div class="matrix-card">
-              <h3>🛡️ Least Privilege Enforcer</h3>
-              <p>Limits agent autonomy to precisely defined parameters (time, spend caps, API endpoints). Unauthorized actions are blocked at the perimeter.</p>
-            </div>
-
-            <div class="matrix-card">
-              <h3>⚡ Non-Repudiable Audit</h3>
-              <p>Every action taken by an agent is signed with its Passport key, linking actions to both the agent version and the human issuer for accountability.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       </section>
 
     </main>
 
     <!-- Footer -->
     <footer class="app-footer">
-      <p>AGENT-PASSPORT — Built for the <strong>AI Passport Ideathon</strong> | Track: Agents | Lane: Build</p>
+      <p>AGENT-PASSPORT — Sovereign AI Agent Delegation Standard | Built for <strong>AI Passport Ideathon</strong></p>
     </footer>
   </div>
 
   <script src="js/passport.js"></script>
   <script src="js/mockServices.js"></script>
   <script src="js/agentRunner.js"></script>
-  <script src="js/devpostContent.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
