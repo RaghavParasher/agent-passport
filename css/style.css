@@ -1,30 +1,30 @@
 :root {
-  --bg-dark: #0f172a;
-  --bg-card: #1e293b;
-  --bg-card-hover: #334155;
-  --accent-primary: #6366f1;
-  --accent-primary-hover: #4f46e5;
-  --accent-cyan: #06b6d4;
-  --accent-success: #10b981;
-  --accent-danger: #ef4444;
-  --accent-warning: #f59e0b;
+  --bg-dark: #faf9f6;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --accent-primary: #18181b;
+  --accent-primary-hover: #27272a;
+  --accent-cyan: #475569;
+  --accent-success: #16a34a;
+  --accent-danger: #dc2626;
+  --accent-warning: #d97706;
   
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  --text-main: #09090b;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
   
-  --border-color: rgba(255, 255, 255, 0.1);
-  --border-highlight: rgba(99, 102, 241, 0.3);
+  --border-color: #e2e8f0;
+  --border-highlight: #cbd5e1;
   
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
   
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
   
-  --shadow-main: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.25);
+  --shadow-main: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 * {
@@ -39,10 +39,6 @@ body {
   font-family: var(--font-sans);
   min-height: 100vh;
   line-height: 1.6;
-  background-image: 
-    radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.15) 0%, transparent 35%),
-    radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.1) 0%, transparent 35%);
-  background-attachment: fixed;
 }
 
 .app-container {
@@ -298,16 +294,69 @@ label {
   box-shadow: var(--shadow-glow);
 }
 
-/* Passport Visual Document */
+/* Egoist Machines Hardware AI Passport Card */
 .passport-visual {
-  background: linear-gradient(145deg, #1e1b4b, #0f172a);
-  border: 1px solid var(--border-highlight);
-  border-radius: var(--radius-md);
-  padding: 20px;
+  background: #18181b;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 28px;
   margin-bottom: 20px;
-  box-shadow: var(--shadow-glow);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   position: relative;
   overflow: hidden;
+  border: 1px solid #27272a;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.passport-visual .pv-header {
+  border-bottom: 1px solid #27272a;
+  padding-bottom: 12px;
+}
+
+.passport-visual .pv-logo {
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.passport-visual .pv-label {
+  color: #71717a;
+  font-size: 0.7rem;
+}
+
+.passport-visual .pv-val {
+  color: #ffffff;
+}
+
+.passport-visual input, .passport-visual select {
+  color: #000;
+}
+
+/* Light theme cards and elements */
+input[type="text"], input[type="number"] {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+}
+
+.checkbox-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.log-stream-container {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+h1, h2, h3, h4 {
+  color: #0f172a !important;
+}
+
+.passport-visual h1, .passport-visual h2, .passport-visual h3, .passport-visual h4 {
+  color: #ffffff !important;
 }
 
 .passport-visual::before {
